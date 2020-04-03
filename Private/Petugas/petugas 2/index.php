@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Skenary</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Petugas 2</title>
+	<link rel="stylesheet" href="../../../asset/css/petugas2.css">
 </head>
 <body>
-	<?php 
-	
-		if(isset($_GET['pesan'])){
-			if($_GET['pesan']=="error"){
-				$pesan = "Anda tidak memiliki hak akses !";
-				echo "<script type='text/javascript'>alert('$pesan');</script>";	
-			}
-		}
-
-		session_start();
-	 
-		if($_SESSION['level']==""){
-			header("location:index.php?pesan=error");
-		} else if($_SESSION['level']=="petugas1"){
-			header("location:../petugas 1/index.php?pesan=error");
-		} else if($_SESSION['level']=="petugas3"){
-			header("location:../petugas 1/index.php?pesan=error");
-		}
- 
-	?>
-	
-	<h1>Halaman Pegawai 2</h1>
- 
-	<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-	<a href="../../logout.php">LOGOUT</a>
+	<div class="bg"></div>
+	<div class="opening">
+		<h1>Hai Petugas 2!</h1>
+		<h5>Welcome back to Skenary</h5>
+	</div>
+	<header class="header">
+		<h1 class="logo"><a href="#">Skenary</a></h1>
+			<ul class="opsi">
+				<li><a href="#">Book Borrowed</a></li>
+				<li><a href="#">Book Borrow</a></li>
+				<li><a href="#">0</a></li>
+			</ul>
+	</header>
+	<div class="box">
+		<h3>Student Information</h3>
+		<p>12 January 2020</p>
+		<h5>Fill The Box</h5>
+		<form action="">
+			<input type="text" placeholder="NIS" name="" required><br>
+			<input type="text" placeholder="Book Code" name="" required><br>
+			<input type="text" placeholder="Book Name" name="" required><br>
+			<button type="submit">Enter</button>
+		</form>
+	</div>
 </body>
 </html>

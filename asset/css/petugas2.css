@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    height:100%;
+    width:100%;
+    margin: 0;
+}
+.bg{
+    background-image: url("../img/gambar1.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.opening{
+    position: relative;
+    text-align: center;
+    top: -370px;
+    color: #fff;
+    font-family: 'Hoefler Text';
+}
+.opening h1{
+    font-size: 40pt;
+}
+.opening h5{
+    font-size: 12pt;
+    margin-top: -30px;
+}
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+    background-color: #f4f4f4;
+    margin-top: -146px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+	margin: 0;
+	font-size: 20pt;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.opsi a{
+    border: 1px solid black;
+    margin:10px;
+}
+.logo a,
+.opsi a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+@media (min-width: 769px) {
+	.header,
+	.opsi {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	    }
+	}
+}
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+    }
+}
+.box{
+    position: relative;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 80%; 
+}
+.box p{
+    float: right;
+}
+input{
+    width: 25%;
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+button{
+    width: 12%;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
