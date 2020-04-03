@@ -15,8 +15,8 @@
 	<header class="header">
 		<h1 class="logo"><a href="#">Skenary</a></h1>
 			<ul class="opsi">
-				<li><a href="#">Book Borrowed</a></li>
-				<li><a href="#">Book Borrow</a></li>
+				<li><a href="#">Buku Dipinjam</a></li>
+				<li><a href="#">Pinjam Buku</a></li>
 				<li><a href="#">0</a></li>
 			</ul>
 	</header>
